@@ -101,14 +101,20 @@ function spawnAllObjects() //takes the room data and spawns the appropriate enem
 
 }
 
-function generateFloorMap () //generates and returns the floor map
+function generateFloorMap (x,y) //generates and returns the floor map this is place holder code
 {
-
+    let arr = [x][y];
+        for (let i = 0;i<x;i++)
+            for (let q = 0;q<y;q++)
+                arr[i][q] = generateRoomMap()
 }
 
-function generateRoomMap () //called by floor map to generate each room
+function generateRoomMap () //called by floor map to generate each room this is place holder code
 {
-
+    let arr = [20][20];
+    for (let i = 0;i<x;i++)
+        for (let q = 0;q<y;q++)
+            arr[i][q] = 1;
 }
 
 function keyDownHandler(e) //appends key to array if it is not already present
@@ -125,14 +131,19 @@ function keyUpHandler(e) //removes specified key from array
 function createCharacter() //generates and contains game character
 {
     let obj = {};
-    obj.xCord = 290;
-    obj.yCord = 550;
-    obj.state = 1;
+    obj.cordinates = [300,300];
+    obj.state = 255; //i have decided 255 is the inital state on spawn
     obj.attackChargeTimer = 0;
+    obj.currentRoom = [0][0];
     obj.moveLeft = function(){};
     obj.moveRight = function(){};
     obj.moveUp = function(){};
     obj.moveDown = function(){};
     obj.attack = function(){};
     return (obj);
+}
+
+function generateBackground()
+{
+
 }
