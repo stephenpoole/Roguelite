@@ -1,0 +1,27 @@
+div
+{
+    width: 600px;
+    text-align: center;
+    color:darkolivegreen;
+    font-size: 15px;
+    font-weight: bold;
+}
+#main
+{
+    height: 630px;
+    border: 2px solid darkcyan;
+    margin: 5px;
+    position: relative;
+    background-color: black;
+}
+h1
+{
+    width: 600px;
+    text-align: center;
+    color: cadetblue;
+}
+
+#backgroundCanvas
+{
+    display: none;
+}
